@@ -1,6 +1,6 @@
 FROM alpine:3.23.4
 
-ENV COMPOSER_VERSION=2.9.7
+ENV COMPOSER_VERSION=2.9.8
 
 COPY ./fs/docker-entrypoint.sh /usr/sbin/docker-entrypoint.sh
 
@@ -28,7 +28,7 @@ RUN \
     apk add --update --no-cache php84-pecl-xdebug php84-pecl-igbinary php84-pecl-memcached && \
     #
     # Database clients
-    apk add --update --no-cache postgresql-client mariadb-connector-c && \
+    apk add --update --no-cache postgresql-client mariadb-connector-c mariadb-client && \
     #
     # Media tools
     apk add --update --no-cache exiftool mediainfo && \
