@@ -40,6 +40,8 @@ RUN \
     rm -f /usr/bin/phar /usr/bin/phar.phar && \
     ln -s /usr/bin/phar84.phar /usr/bin/phar && \
     ln -s /usr/bin/phar84.phar /usr/bin/phar.phar && \
+    ln -s /usr/bin/php84 /usr/bin/php && \
+    ln -s /usr/bin/phpdbg84 /usr/bin/phpdbg && \
     ln -s /usr/sbin/php-fpm84 /usr/sbin/php-fpm && \
     ln -s /etc/php84 /etc/php && \
     #
