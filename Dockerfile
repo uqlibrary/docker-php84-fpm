@@ -9,7 +9,8 @@ RUN \
     apk upgrade --update --no-cache && \
     #
     # Required deps
-    apk add --update --no-cache bash git inotify-tools wget curl python3 jq nano less groff py-pip xz aws-cli aws-cli-bash-completion && \
+    apk add --upgrade --no-cache bash git inotify-tools curl jq nano less groff xz aws-cli aws-cli-bash-completion && \
+    apk add --upgrade --no-cache -X https://dl-cdn.alpinelinux.org/alpine/edge/main busybox busybox-binsh nghttp2-libs pcre2 perl python3 python3-pyc python3-pycache-pyc0 py3-cryptography py3-pip py3-urllib3 py3-urllib3-pyc ssl_client wget && \
     #
     # Cleanup
     rm -rf /var/cache/apk/*
